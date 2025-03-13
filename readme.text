@@ -1,0 +1,26 @@
+Mind Map Flowchart Application
+
+Overview:-
+The Mind Map Flowchart Application is a web-based tool designed to create, edit, and manage mind maps and flowcharts. It is built using Laravel for the backend and React.js with Inertia.js for the frontend, ensuring a seamless and interactive user experience.
+
+Features:-
+Mind Map & Flowchart Creation: Input your Feature text and select existing Mind text interface to create interactive mind maps and flowcharts.
+Node & Edge Management: Add, edit, delete, and connect nodes with flexible customization options.
+Autosave & History: Automatically save progress and retrieve previous versions.
+
+Tech Stack
+
+Backend
+Laravel: Handles business logic, authentication, and API services.
+
+MySQL: Database management for storing user and mind map data.
+
+Frontend
+React.js: For dynamic and interactive UI components.
+
+Inertia.js: Bridges Laravel and React to provide a seamless SPA experience.
+
+Tailwind CSS: For modern and responsive UI design.
+
+React Flow: Library for building flowcharts and mind maps.
+

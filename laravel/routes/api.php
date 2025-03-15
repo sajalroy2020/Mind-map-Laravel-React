@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FlowchartController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NodeController;
@@ -23,3 +24,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('/nodes', [NodeController::class, 'index']);
 Route::post('/nodes-store', [NodeController::class, 'store']);
 Route::delete('/nodes/{id}', [NodeController::class, 'destroy']);
+
+Route::post('/generate-flowchart', [FlowchartController::class, 'generate']);

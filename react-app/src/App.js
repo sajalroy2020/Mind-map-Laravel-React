@@ -1,6 +1,6 @@
 import './App.css';
 import MindMap from './components/MindMap';
-import AboutUs from './components/AboutUs';
+import MindMapAi from './components/MindMapAi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { useState } from 'react';
 
@@ -19,15 +19,15 @@ function App() {
           >
             Mind Map
           </button>
-          {/* <button 
-            className={`nav-button ${currentPage === 'about' ? 'active' : ''}`}
-            onClick={() => setCurrentPage('about')}
+          <button 
+            className={`nav-button ${currentPage === 'mind-map-ai' ? 'active' : ''}`}
+            onClick={() => setCurrentPage('mind-map-ai')}
           >
             About Us
-          </button> */}
+          </button>
         </nav>
         <div className="content-container">
-          {currentPage === 'mindmap' ? <MindMap /> : <AboutUs />}
+          {currentPage === 'mindmap' ? <MindMap /> : <MindMapAi />}
         </div>
       </div>
     </QueryClientProvider>

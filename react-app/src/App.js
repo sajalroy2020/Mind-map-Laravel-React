@@ -23,7 +23,7 @@ function App() {
             className={`nav-button ${currentPage === 'mind-map-ai' ? 'active' : ''}`}
             onClick={() => setCurrentPage('mind-map-ai')}
           >
-            About Us
+            Mind Map AI
           </button>
         </nav>
         <div className="content-container">
